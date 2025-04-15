@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新昊电子</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a3c34, #2e6f5e);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #2ec4b6, #1a9989);
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: rgba(30, 61, 55, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        .sidebar {
+            width: 40%;
+            background: linear-gradient(45deg, #2ec4b6, #6fffe9);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(46, 196, 182, 0.8);
+            transition: transform 0.3s ease;
+        }
+        .photo img:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            width: 60%;
+            padding: 30px;
+            background: #2e6f5e;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 20px 0;
+            font-size: 1.2em;
+            padding: 10px;
+            background: rgba(46, 196, 182, 0.1);
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        ul li:hover {
+            background: rgba(46, 196, 182, 0.3);
+        }
+        ul li strong {
+            color: #2ec4b6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Company</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo">
+                <img src="your-photo.jpg" alt="网站完善ing...">
+            </div>
+        </div>
+        <div class="content">
+            <ul>
+                <li><strong>Name:</strong> 广州新昊电子商务有限公司</li>
+                <li><strong>Phone Number:</strong> +1 7705233389</li>
+                <li><strong>Email Address:</strong> newhaopay@outlook.com</li>
+                <li><strong>Main Address:</strong> 广州市南沙区黄阁镇麒龙东路30号202房K0216室</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
